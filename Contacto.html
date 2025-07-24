@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Marcelo Ilustrador</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='css/400700.css' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+		<div id="header" style="position: relative; background:url(images/banner.jpg) no-repeat center center fixed;background-size: cover;">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<span>Tatuador Profesional</span>
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" style="font-weight:bold">Inicio</a></li>
+						<li><a href="Tattoos.html" style="font-weight:bold">Tattoos</a></li>
+						<li><a href="Dibujos.html" style="font-weight:bold">Dibujos</a></li>
+						<li class="active"><a href="Contacto.html" style="font-weight:bold">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+<!-- 			<form action="send_email.php" method="post">
+			  <label style="background-color:white;" for="firstName">First Name:</label>
+			  <input type="text" id="firstName" name="firstName" required>
+			  <br>
+			 
+			  <label style="background-color:white;" for="email">Email Address:</label>
+			  <input type="email" id="email" name="email" required>
+			  <br>
+			 
+			  <label style="background-color:white;" for="message">Message:</label>
+			  <textarea id="message" name="message" required></textarea>
+			  <br>
+			 
+			  <input type="button" value="Enviar" onclick="sendEmail()">
+			</form> -->
+
+    </body>
+</html>
+<script>
+function sendEmail() {
+Email.send({
+    Host : "smtp.mailslurp.com",
+    Username : "rimodp23@gmail.com",
+    Password : "837904745B142F03AC20374A97F26AA26298",
+    To : 'rimodp23@gmail.com',
+    From : "rimodp23@gmail.com",
+    Subject : "Test email",
+    Body : "<html><h2>Header</h2><strong>Bold text</strong><br/></br><em>Italic</em></html>"
+}).then(message => alert(message)
+);
+}
+</script>
