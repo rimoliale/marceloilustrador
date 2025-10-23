@@ -1,27 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Marcelo Ilustrador</title>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Marcelo Ilustrador</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
         <meta name="description" content="Responsive Image Gallery with jQuery" />
         <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
-		<meta name="author" content="Codrops" />
+		<link href='css/400700.css' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
 		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
 			<style>
 				.es-carousel ul{
 					display:block;
 				}
 			</style>
 		</noscript>
-		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+				<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
 			<div class="rg-image-wrapper">
 				{{if itemsCount > 1}}
 					<div class="rg-image-nav">
@@ -38,31 +48,45 @@
 				</div>
 			</div>
 		</script>
-    </head>
-    <body>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header" style="position: relative; background:url(images/banner.jpg) no-repeat center center fixed;background-size: cover;">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<span>Tatuador Profesional</span>
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" style="font-weight:bold">Inicio</a></li>
+						<li class="active"><a href="Tattoos.html" style="font-weight:bold">Tattoos</a></li>
+						<li ><a href="Dibujos.html" style="font-weight:bold">Dibujos</a></li>
+						<li><a href="Contacto.html" style="font-weight:bold">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main -->
 		<div class="container">
-			<div class="header">
-				<a href="http://tympanus.net/Development/Elastislide/"><span>&laquo; Previous Demo: </span>Elastislide</a>
-				<span class="right_ab">
-					<a href="http://www.flickr.com/photos/smanography/" target="_blank">Images by Shermeee</a>
-					<a href="http://creativecommons.org/licenses/by/2.0/deed.en_GB">CC BY 2.0</a>
-					<a href="http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/"><strong>back to the Codrops post</strong></a>
-				</span>
-				<div class="clr"></div>
-			</div><!-- header -->
-			
-			<div class="content">
+		  <!-- header -->
+<div class="content">
+	  <h1>&nbsp;</h1>
 				<div id="rg-gallery" class="rg-gallery">
 					<div class="rg-thumbs">
 						<!-- Elastislide Carousel Thumbnail Viewer -->
 						<div class="es-carousel-wrapper">
 							<div class="es-nav">
 								<span class="es-nav-prev">Previous</span>
-								<span class="es-nav-next">Next</span>
-							</div>
+								<span class="es-nav-next">Next</span>							</div>
 							<div class="es-carousel">
 								<ul>
-									<li><a href="#"><img src="images/1000.jpg" data-large="images/1000.jpg" alt="image1000" data-description="" /></a></li>
+<li><a href="#"><img src="images/1000.jpg" data-large="images/1000.jpg" alt="image1000" data-description="" /></a></li>
 									<li><a href="#"><img src="images/1001.jpg" data-large="images/1001.jpg" alt="image1001" data-description="" /></a></li>
 									<li><a href="#"><img src="images/1002.jpg" data-large="images/1002.jpg" alt="image1002" data-description="" /></a></li>
 									<li><a href="#"><img src="images/1003.jpg" data-large="images/1003.jpg" alt="image1003" data-description="" /></a></li>
@@ -99,8 +123,9 @@
 						<!-- End Elastislide Carousel Thumbnail Viewer -->
 					</div><!-- rg-thumbs -->
 				</div><!-- rg-gallery -->
-			</div><!-- content -->
-		</div><!-- container -->
+				<p class="sub">&nbsp;</p>
+		  </div><!-- content -->
+	</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
